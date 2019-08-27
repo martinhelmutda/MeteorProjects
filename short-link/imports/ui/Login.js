@@ -29,7 +29,7 @@ export default class Login extends React.Component {
       <div>
         <h1>Login </h1>
         {this.state.error ? <p>{this.state.error}</p> : undefined}
-        <form onSubmit={this.onSubmit.bind(this)}>
+        <form onSubmit={this.onSubmit.bind(this)} noValidate>
           <input type="email" name="email" ref="email" placeholder="Email"></input>
           <input type="password" name="password" ref="password" placeholder="Password"></input>
           <button>Login</button>
