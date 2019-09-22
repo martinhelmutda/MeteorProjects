@@ -4,10 +4,13 @@ export default class LinksList extends React.Component {
   componentDidMount(){
     console.log('componentDidMount LinksList');
   }
-  //
+  //Right before it gets removed
 componentWillUnmount(){
+  //Always unmount things
     console.log('componentWillUnmount LinksList');
 }
+
+
   render() {
     return (
       <div>
